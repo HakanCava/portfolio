@@ -1,0 +1,12 @@
+// $mainColor:rgb(2, 2, 102);
+$mainColor:green;
+$secondColor:black;
+$thirdColor:green;
+
+$width:768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}

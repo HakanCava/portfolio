@@ -1,0 +1,98 @@
+@import "../../global.scss";
+
+.intro {
+  // background-color: white;
+  display: flex;
+  .left {
+    flex: 1.25;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .leftContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      .iconContainer {
+        .icon {
+          font-size: 35px;
+          color: $secondColor;
+          margin: 3px;
+          border-radius: 20px;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: rgba(205, 205, 205, 0.555);
+            padding: 3px;
+          }
+          
+        }
+        .darkMod{
+          color:white;
+          
+        }
+
+        
+      }
+    }
+  }
+
+  .center {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .centerContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 60px;
+        font-weight: 500;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .right {
+    flex: 2.75;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    // padding-left: 50px;
+    .rightContainer {
+      .imgContainer {
+        background: url("../../../public/assets/my_photo.JPG");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-self: center;
+        order: 1;
+        width: 300px;
+        height: 300px;
+        box-shadow: inset 0 0 0 9px rgb(250 250 250/ 30%);
+        animation: profil_photo 8s ease-in-out infinite 1s;
+      }
+
+      @keyframes profil_photo {
+        0% {
+          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+        50% {
+          border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+        }
+        100% {
+          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+      }
+    }
+  }
+}

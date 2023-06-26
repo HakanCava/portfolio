@@ -1,0 +1,70 @@
+.projectCard {
+  padding: 20px 10px;
+  background-color: #151030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  // height: 500px;
+  border-radius: 10px;
+  .cardContainer {
+    height: 100%;
+    width: 100%;
+  // overflow: hidden;
+
+    .imgContainer {
+      margin: auto;
+
+      width: 625px;
+      height: 350px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+      background-color: white;
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        z-index: 1;
+      }
+      .githubImg {
+        background-color: #202020;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 2;
+        right: 5px;
+        top: 5px;
+
+        .github {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          padding: 4px;
+        }
+      }
+    }
+    .titleContainer {
+      padding: 12px 23px;
+      .titleDescription {
+        margin-top: 5px;
+        h3 {
+          color: white;
+        }
+        p {
+          color: white;
+          font-size: 14px;
+        }
+      }
+
+      .tag {
+        display: flex;
+        margin-top: 15px;
+        gap: 10px;
+      }
+    }
+  }
+}

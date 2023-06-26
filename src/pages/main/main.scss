@@ -1,0 +1,33 @@
+.main {
+    height: 100vh;
+    // overflow-x: hidden; //! alttaki scrollu yok ettik
+    .sections {
+      width: 100%;
+      height: calc(100vh - 70px);
+      // background-color: tomato;
+      position: relative;
+      top: 70px;
+      scroll-behavior: smooth;
+      // scroll-snap-type:y initial;
+      // scroll-snap-type: y proximity;
+      scrollbar-width: none; //!  firefox için
+      &::-webkit-scrollbar{ //! diğerleri
+        display: none;
+    transition: all 2s ease;
+        
+      }
+  
+      > *{
+        width: 100vw;
+        height: calc(100vh - 70px);
+        scroll-snap-align: start;
+      }
+
+      .darkModeActive{
+        border: 1px solid red;
+        height: 5px;
+      }
+    }
+  }
+  
+
