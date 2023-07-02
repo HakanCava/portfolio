@@ -20,15 +20,15 @@ const Intro = () => {
             </a>
           </div>
           <div className="iconContainer">
-            <a href="" target="_blank">
+            <a href="https://github.com/HakanCava" target="_blank">
               <AiOutlineGithub className={"icon "+ (darkMode && "darkMod")} />
             </a>
           </div>
-          <div className="iconContainer">
+          {/* <div className="iconContainer">
             <a href="" target="_blank">
               <AiFillTwitterCircle className={"icon "+ (darkMode && "darkMod")}  />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -37,7 +37,6 @@ const Intro = () => {
         <div className="centerContainer">
           <h1>Hakan Cava</h1>
           <h3>Full Stack Developer</h3>
-          <p>I'm Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
 

@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { projects } from "./projectsData";
 import ProjectCard from "./ProjectCard";
 import "./projects.scss";
+import { useThemeContext } from "../../Context";
 
 const Projects = () => {
+  const theme = useThemeContext();
+  const { darkMode } = theme.state;
   const [currentSlide, setCurrentSlide] = useState(0);
   const handleClick = (way) => {
     way === "left"
@@ -13,7 +16,11 @@ const Projects = () => {
         );
   };
   return (
-    <div className="projects" id="projects">
+    <div
+      className="projects"
+      id="projects"
+      style={{ backgroundColor: darkMode ? "#232526" : "whitesmoke" }}
+    >
       <h1>Projects</h1>
       <div className="projectContainer">
         <div
@@ -21,10 +28,15 @@ const Projects = () => {
           style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
         >
           {projects.map((project) => (
-            <div style={{width:"100vw", display:"flex",alignItems:"center",
-            justifyContent:"center"}}>
-
-            <ProjectCard key={project.id} {...project} />
+            <div
+              style={{
+                width: "100vw",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <ProjectCard key={project.id} {...project} />
             </div>
           ))}
         </div>

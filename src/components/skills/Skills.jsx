@@ -6,8 +6,8 @@ import SkillList from "../skilllist/SkillList";
 import { useThemeContext } from "../../Context";
 
 const Skills = () => {
-  const theme=useThemeContext()
-  const {darkMode} = theme.state;
+  const theme = useThemeContext();
+  const { darkMode } = theme.state;
   const [selected, setSelected] = useState("frontend");
   const [data, setData] = useState([]);
   const list = [
@@ -42,12 +42,16 @@ const Skills = () => {
     }
   }, [selected]);
 
-  console.log(data)
+  console.log(data);
 
   return (
-    <div className="skills" id="skills" style={{backgroundColor:darkMode?"black":"whitesmoke"}}>
-        <h1>Skills</h1>
-        <ul>
+    <div
+      className="skills"
+      id="skills"
+      
+    >
+      <h1>Skills</h1>
+      <ul>
         {list.map((item) => (
           <SkillList
             title={item.title}
@@ -57,17 +61,13 @@ const Skills = () => {
             id={item.id}
           />
         ))}
-        </ul>
+      </ul>
 
-        <div className="container">
+      <div className="container">
         {data.map((item) => (
-          <div className={"item "+(darkMode&&"itemDarkmode")} key={item.id}>
-            <img
-              src={item.img}
-              alt=""
-              />
-              <h5 className={(darkMode ? "h5Darkmode" : null)}>{item.name}</h5>
-           
+          <div className={"item " + (darkMode && "itemDarkmode")} key={item.id}>
+            <img src={item.img} alt="" />
+            <h5 className={darkMode ? "h5Darkmode" : null}>{item.name}</h5>
           </div>
         ))}
       </div>

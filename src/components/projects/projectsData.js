@@ -5,7 +5,7 @@ export const projects = [
     id: 1,
     name: "Blog App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      " Blog App is a blog web application using that user to create his/her blogs and display them on the dashboard. Posting, deleting, and updating blog posts can be done. In this project, each user has their blog page, used Material UI and Tailwind libraries for styling, profit by react-router-dom library for page transitions, a react-toastify library for notifications, and react-helmet for SEO. In addition, Redux-persist was used to keep user information in local storage. Swagger documentation which was created by Python Django was used for CRUD operations and authentication authorization in backend. Redux  Toolkit was used for state management.",
     tags: [
       {
         name: "frontend",
@@ -31,7 +31,7 @@ export const projects = [
     id: 2,
     name: "Stock App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location",
+      " Stock App is an online single-page web application that enables you to manage orders. You can get, add, edit, or delete products, firms, brands, sales, and purchases. Technical tools and libraries: HTML, CSS, JavaScript, React, Material.UI, Formik, Yup, Axios, Toastify, React-router-dom libraries in frontend. Redux-persist was used to keep user information in local storage. Swagger documentation which was created by Python Django was used for CRUD operations and authentication authorization in backend. Redux Toolkit was used for state management",
     tags: [
       {
         name: "frontend",
@@ -57,7 +57,7 @@ export const projects = [
     id: 3,
     name: "Movie App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Movie App is a movie web application using Firebase realtime-database and displays them on the dashboard. If a user exists, some features can appear. For example, each movie’s score and favorite button. Also, each movie is grouped by its score. In the project, the Firebase realtime-database library was used for storing data, Tailwind library for styling, react-router-dom library for page transitions, and react-toastify library for notifications. In addition, firebase was used for login, register, and authorization processes.",
     tags: [
       {
         name: "frontend",
@@ -83,7 +83,7 @@ export const projects = [
     id: 4,
     name: "DataGrid",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "In this project, we create a data table. The data user can add a new data by clicking the 'add new account' button. The added data is kept in local storage and printed on the screen. I used the useContext structure for global states.",
     tags: [
       {
         name: "frontend",
