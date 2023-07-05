@@ -3,14 +3,27 @@
 .projects {
   display: flex;
   flex-direction: column;
-  // gap: 20px;
   align-items: center;
 
   h1 {
-margin-top: 20px;
+    // margin-top: 20px;
     font-size: 50px;
     padding: 10px;
     overflow: hidden;
+    // height: 75px;
+    @include mobile {
+      font-size: 25px;
+      margin-top: 10px;
+    }
+    @include tablet {
+      font-size: 30px;
+      margin-top: 5px;
+    }
+    @include laptop {
+      font-size: 40px;
+      margin-top: 5px;
+    }
+  
   }
   .projectContainer {
     width: 100%;
@@ -19,11 +32,38 @@ margin-top: 20px;
     align-items: center;
     justify-content: center;
     position: relative;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+
+    @include mobile {
+      padding-top: 80px;
+      height: 90%;
+    }
+    @include tablet {
+      padding-top: 80px;
+      height: 90%;
+    }
+    
+
     .slider {
       display: flex;
       position: absolute;
       left: 0;
       transition: all 1s ease-out;
+      justify-content: center;
+      margin: 5px;
+
+      @include mobile {
+        height: 100vh;
+        flex-direction: column;
+        margin-top: 80px;
+        margin-bottom: 30px;
+        gap: 10px;
+      }
+    
+
+  
     }
     .arrow {
       background-color: $mainColor;
@@ -34,16 +74,39 @@ margin-top: 20px;
       position: absolute;
       cursor: pointer;
       opacity: 0.5;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
+      @include mobile {
+        display: none;
+      }
+      @include tablet {
+        height: 35px;
+        width: 35px;
+      }
+      @include laptop {
+        height: 50px;
+        width: 50px;
+      }
       &:hover {
         opacity: 1;
       }
       &.left {
         left: 60px;
         transform: rotateY(180deg);
+        @include tablet {
+          left: 20px;
+        }
+        @include laptop {
+          left: 50px;
+        }
       }
       &.right {
         right: 60px;
+        @include tablet {
+          right: 20px;
+        }
+        @include laptop {
+          right: 50px;
+        }
       }
     }
   }

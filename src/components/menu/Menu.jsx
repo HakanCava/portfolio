@@ -1,5 +1,5 @@
 import './menu.scss'
-import {AiOutlineHome} from "react-icons/ai"
+
 
 const Menu = ({menuOpen,setMenuOpen}) => {
 

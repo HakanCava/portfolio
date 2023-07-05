@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
-import { AiFillTwitterCircle } from "react-icons/ai";
 import "./intro.scss";
 import { useContext } from "react";
 import { themeContext } from "../../Context";
@@ -15,20 +14,16 @@ const Intro = () => {
       <div className="left">
         <div className="leftContainer">
           <div className="iconContainer">
-            <a href="https://www.linkedin.com/in/hakancava/" target="_blank">
+            <a href="https://www.linkedin.com/in/hakancava/" target="_blank" rel="noreferrer" >
               <AiOutlineLinkedin className={"icon "+ (darkMode && "darkMod")} />
             </a>
           </div>
           <div className="iconContainer">
-            <a href="https://github.com/HakanCava" target="_blank">
+            <a href="https://github.com/HakanCava" target="_blank" rel="noreferrer">
               <AiOutlineGithub className={"icon "+ (darkMode && "darkMod")} />
             </a>
           </div>
-          {/* <div className="iconContainer">
-            <a href="" target="_blank">
-              <AiFillTwitterCircle className={"icon "+ (darkMode && "darkMod")}  />
-            </a>
-          </div> */}
+        
         </div>
       </div>
 

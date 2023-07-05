@@ -46,7 +46,7 @@ export const projects = [
         color: "#ffef62",
       },
       {
-        name: "material ui",
+        name: "materialUI",
         color: "#c6ff00",
       },
     ],

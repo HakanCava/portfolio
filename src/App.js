@@ -1,4 +1,3 @@
-import React from "react";
 import Main from "./pages/main/Main";
 import { useContext } from "react";
 import { themeContext } from "./Context";

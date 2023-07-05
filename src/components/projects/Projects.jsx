@@ -28,16 +28,7 @@ const Projects = () => {
           style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
         >
           {projects.map((project) => (
-            <div
-              style={{
-                width: "100vw",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <ProjectCard key={project.id} {...project} />
-            </div>
+            <ProjectCard key={project.id} {...project} />
           ))}
         </div>
         <img

@@ -1,16 +1,30 @@
 @import "../../global.scss";
 
 .skills {
-  // background-color: whitesmoke;
   display: flex;
   user-select: none;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  @include mobile {
+    overflow: auto;
+  }
   h1 {
     margin: 20px 0px;
+    margin-top: 35px;
     font-size: 50px;
     overflow: hidden;
+    padding: 10px;
+    @include mobile {
+      font-size: 25px;
+      margin: 5px 0px;
+      padding: 25px;
+    }
+    @include tablet {
+      font-size: 30px;
+      margin: 5px 0px;
+      padding: 25px;
+    }
   }
 
   ul {
@@ -21,6 +35,17 @@
     align-items: center;
     justify-content: center;
     margin-right: 40px;
+    overflow: hidden;
+    @include mobile {
+      margin: 5px;
+      padding: 20px;
+      margin-bottom: 0;
+    }
+    @include tablet {
+      margin: 5px;
+      padding: 20px;
+      margin-bottom: 0;
+    }
   }
 
   .container {
@@ -31,6 +56,11 @@
     flex-wrap: wrap;
     margin-top: 50px;
     padding: 10px;
+    @include mobile {
+      margin-top: 20px;
+      width: 90%;
+      flex-wrap: wrap;
+    }
 
     .item {
       width: 120px;
@@ -45,6 +75,8 @@
       flex-direction: column;
       transition: all 0.5s ease;
       position: relative;
+      @include mobile {
+      }
       h5 {
         font-size: 20px;
         position: absolute;

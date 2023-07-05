@@ -7,13 +7,13 @@ import Skills from "../../components/skills/Skills";
 import Projects from "../../components/projects/Projects";
 import Contact from "../../components/contact/Contact";
 import About from "../../components/about/About";
-import { useThemeContext } from "../../Context";
+
 
 
 const Main = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const theme = useThemeContext();
-  const { darkMode } = theme.state;
+
+
 
   return (
     <div className="main">

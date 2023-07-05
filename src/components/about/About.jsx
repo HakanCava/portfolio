@@ -14,17 +14,16 @@ const About = () => {
       style={{ backgroundColor: darkMode ? "#232526" : "whitesmoke" }}
     >
       <h1>About Me</h1>
-      <h4>My Introduction</h4>
       <div className="aboutContainer">
         <div className="left">
           <img src="assets/my_photo.JPG" alt="" />
         </div>
         <div className="right">
           <div className="carts">
-            <div className="box">
+            <div className="box" >
               <MdOutlineWorkspacePremium className="box-icon" />
               <h3>Experience</h3>
-              <p>3 Years Working</p>
+              <p>2 Years Working</p>
             </div>
             <div className="box">
               <BsFront className="box-icon" />
@@ -39,9 +38,9 @@ const About = () => {
           </div>
           <div className="desc">
             <p>
-              I'm a skilled fullstack developer with experience in JavaScript,
+              I'm a skilled fullstack developer with experience in JavaScript, 
               TypeScript, and Python, and expertise in frameworks like React,
-              Node.js, and Django. I'm a quick learner and collaborate closely
+              React Native, and Django. I'm a quick learner and collaborate closely
               with clients to create efficient, scalable, and user-friendly
               solutions that solve real-world problems.
             </p>

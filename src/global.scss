@@ -1,12 +1,40 @@
 // $mainColor:rgb(2, 2, 102);
-$mainColor:green;
-$secondColor:black;
-$thirdColor:green;
+$mainColor: green;
+$secondColor: black;
+$thirdColor: green;
 
-$width:768px;
+$zeroWidth: 0px;
+$mobilWidth: 576px;
+$tabletWidth: 768px;
+$laptopWidth: 1024px;
+$desktopWidth: 1200px;
 
 @mixin mobile {
-    @media (max-width: #{$width}) {
-        @content
-    }
+  @media (min-width: #{$zeroWidth}) and (max-width: #{$mobilWidth}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobilWidth+1}) and (max-width: #{$tabletWidth}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$tabletWidth}) and (max-width: #{$laptopWidth}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$laptopWidth}) and (max-width: #{$desktopWidth}) {
+    @content;
+  }
+}
+
+@mixin bigDesktop {
+  @media (min-width: #{$desktopWidth+1}) {
+    @content;
+  }
 }

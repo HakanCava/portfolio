@@ -2,6 +2,15 @@
 
 .contact {
   display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+  @include tablet {
+    flex-direction: column;
+  }
+  @include laptop {
+    flex-direction: column;
+  }
 
   .left {
     flex: 1;
@@ -9,8 +18,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      flex: .5;
+    }
+    @include laptop {
+      flex: .5;
+    }
     img {
       height: 70%;
+      @include mobile {
+        display: none;
+      }
+     
     }
   }
   .right {
@@ -19,39 +41,126 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include mobile {
+      flex: 1.5;
+      justify-content: flex-start;
+    }
+    @include tablet {
+      flex: 1.5;
+      justify-content: flex-start;
+    }
+    @include laptop {
+      flex: 1.5;
+      justify-content: flex-start;
+    }
     h2 {
       font-size: 30px;
       width: 70%;
+      overflow: hidden;
+      @include mobile {
+        font-size: 25px;
+        text-align: center;
+      }
+      @include tablet {
+        font-size: 25px;
+        text-align: center;
+      }
+      @include laptop {
+        font-size: 30px;
+        text-align: center;
+      }
     }
     form {
+
       width: 70%;
       height: 70%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: space-around;
+      justify-content: space-evenly;
+      @include mobile {
+        gap: 10px;
+        height: 100%;
+        width: 90%;
+        margin-top: 0px;
+        padding: 10px;
+        padding-top: 0;
+        align-items: center;
+      }
+      @include tablet {
+        gap: 10px;
+        height: 100%;
+        width: 90%;
+        margin-top: 0px;
+        padding: 10px;
+        padding-top: 0;
+        align-items: center;
+      }
+      @include laptop {
+        gap: 1px;
+        height: 100%;
+        width: 90%;
+        align-items: center;
+      }
 
       .label-input {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        @include mobile {
+          padding: 10px;
+        }
+        @include tablet {
+          padding: 10px;
+        }
         label {
           padding-left: 10px;
+          @include mobile {
+            height: 35px;
+            padding-top: 5px;
+          }
         }
         input {
           width: 300px;
           height: 30px;
           font-size: 14px;
           padding: 10px;
+          @include mobile {
+            font-size: 13px;
+            width: 250px;
+            height: 20px;
+            margin-left: 8px;
+          }
+          @include tablet {
+            font-size: 13px;
+            width: 250px;
+            height: 20px;
+            margin-left: 8px;
+          }
         }
       }
-      
+
       .label-text {
+
         display: flex;
         flex-direction: column;
         gap: 5px;
+        @include mobile {
+          padding: 10px;
+        }
+        @include tablet {
+          padding: 10px;
+        }
         label {
           padding-left: 10px;
+          @include mobile {
+            height: 35px;
+            padding-top: 15px;
+          }
+          @include tablet {
+            height: 35px;
+            padding-top: 15px;
+          }
         }
         textarea {
           width: 300px;
@@ -59,6 +168,18 @@
           font-size: 14px;
           resize: none;
           padding: 10px;
+          @include mobile {
+            font-size: 13px;
+            width: 250px;
+            height: 110px;
+            margin-left: 8px;
+          }
+          @include tablet {
+            font-size: 13px;
+            width: 250px;
+            height: 110px;
+            margin-left: 8px;
+          }
         }
       }
 
@@ -69,17 +190,25 @@
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
+        @include mobile {
+          font-size: 15px;
+          width: 250px;
+          margin-left: 18px;
+        }
 
         &:focus {
           outline: none;
         }
       }
-
     }
     span {
       font-weight: 500;
       color: green;
       width: 70%;
+      @include mobile {
+        font-size: 15px;
+        
+      }
     }
   }
 }

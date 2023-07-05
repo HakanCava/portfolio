@@ -1,5 +1,4 @@
 import "./navbar.scss";
-import { BsFillPersonFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { AiFillHome } from "react-icons/ai";
 import Toggle from "../Toggle/Toggle";
